@@ -8,7 +8,6 @@ const Landing = () => {
   return (
     <div className="min-h-screen">
       <Hero />
-     
     </div>
   );
 };

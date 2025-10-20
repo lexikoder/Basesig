@@ -13,7 +13,7 @@ import Onboard from "./pages/Onboard";
 import OnboardingPage from "./pages/Onboard";
 import CreatePasswordPage from "./pages/CreatePassword";
 import WelcomePage from "./pages/WelcomePage";
-import Landing from "./pages/landingpage";
+import Landing from "./pages/Landingpage";
 import UseCasesPage from "./pages/Usecase";
 import Dashboard from "./pages/Dashboard";
 import DashboardLayout from "./pages/DashboardLayout";
