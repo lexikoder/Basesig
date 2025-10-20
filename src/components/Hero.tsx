@@ -105,7 +105,7 @@ const teamMembers: TeamMember[] = [
             </Link>
             <Link
             to = "http://localhost:8080/"
-              className="bg-gradient-to-r from-pink-500 to-orange-400 text-white hover:opacity-90 text-sm"
+              className="inline-block px-5 py-2.5 rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 text-white font-medium shadow-md transition-all hover:opacity-90 hover:shadow-lg hover:scale-[1.02]"
               // size="sm"
               target="_blank" // opens in new tab
   rel="noopener noreferrer"
