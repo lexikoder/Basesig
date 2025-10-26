@@ -76,13 +76,13 @@ const teamMembers: TeamMember[] = [
     linkedin: "https://linkedin.com/in/uzor-ifeanyi-a500a7105",
     twitter: "https://x.com/lexikoder",
   },
-  {
-    name: "Jane Doe",
-    role: "CTO",
-    image: "https://i.pravatar.cc/150?img=11",
-    linkedin: "#",
-    twitter: "#",
-  }
+  // {
+  //   name: "Jane Doe",
+  //   role: "CTO",
+  //   image: "https://i.pravatar.cc/150?img=11",
+  //   linkedin: "#",
+  //   twitter: "#",
+  // }
 ];
 
   return (
