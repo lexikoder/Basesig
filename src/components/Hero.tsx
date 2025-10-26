@@ -4,6 +4,7 @@ import { ArrowRight, Sparkles, FileCheck, Shield, Clock, Users } from "lucide-re
 import { Card, CardContent } from "@/components/ui/card";
 import image from "@/assets/image.png";
 import cto from "@/assets/cto.png";
+import frontend from "@/assets/front-end.jpeg";
 import {  FileText, Coins, CheckCircle, TrendingUp, } from "lucide-react";
 // import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Twitter } from "lucide-react";
@@ -76,13 +77,13 @@ const teamMembers: TeamMember[] = [
     linkedin: "https://linkedin.com/in/uzor-ifeanyi-a500a7105",
     twitter: "https://x.com/lexikoder",
   },
-  // {
-  //   name: "Jane Doe",
-  //   role: "CTO",
-  //   image: "https://i.pravatar.cc/150?img=11",
-  //   linkedin: "#",
-  //   twitter: "#",
-  // }
+  {
+    name: "Augustine Ugberaese",
+    role: "Front-end Developer",
+    image: frontend,
+    linkedin: "https://linkedin.com/in/augustine-ugberaese",
+    twitter: "#",
+  }
 ];
 
   return (
