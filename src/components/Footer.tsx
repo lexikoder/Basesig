@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
             <p className="text-muted-foreground">
-              © 2025 eSignature Platform. All rights reserved.
+              © 2025 Basesig All rights reserved.
             </p>
           </div>
           <div className="flex gap-6">

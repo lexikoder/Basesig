@@ -3,59 +3,67 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, FileCheck, Shield, Clock, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import image from "@/assets/image.png";
+import cto from "@/assets/cto.png";
 import {  FileText, Coins, CheckCircle, TrendingUp, } from "lucide-react";
 // import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Twitter } from "lucide-react";
 import { Link, Outlet } from "react-router-dom";
 export default function Hero() {
   const features = [
+   
+
     {
       icon: FileCheck,
-      title: "Easy to Use",
-      description: "Send and sign documents in just a few clicks. No training required.",
+      title: " On-Chain Security",
+      description: "Protect every business agreement with blockchain-level transparency and tamper-proof verification.",
     },
     {
       icon: Shield,
-      title: "Legally Binding",
-      description: "Bank-level security with legally enforceable electronic signatures.",
+      title: "Verified Trust",
+      description: "Every signature is recorded on-chain, building an immutable record of trust between partners and clients.",
     },
     {
       icon: Clock,
-      title: "Save Time",
-      description: "Close deals 80% faster with automated workflows and reminders.",
+      title: "Faster Payments",
+      description: "Turn signed contracts into instantly fundable assets and access payment as soon as deals are approved.",
     },
     {
       icon: Users,
-      title: "Collaborate Seamlessly",
-      description: "Multiple signers, custom fields, and real-time tracking for teams.",
+      title: "Simple & Seamless",
+      description: "Upload, sign, and fund — all in one place. Basesig integrates easily with your existing business workflow.",
     },
   ];
 
-  const baseSignUseCases = [
+
+
+
+
+
+  const BasesigUseCases = [
     {
       icon: FileText,
-      title: "Smart Contract Automation",
+      title: "Suppliers and Vendors",
       description:
-        "Hashfire uses blockchain-based smart contracts to automate receivables financing workflows, ensuring transparent and tamper-proof agreements between vendors and buyers.",
+        "Small, medium, and large businesses that provide goods or services and face payment delays.Needaccess to working capital before clients pay approved invoices or purchase orders.",
     },
     {
       icon: Shield,
-      title: "Secure Document Verification",
+      title: "Buyers / Enterprises",
       description:
-        "Every document uploaded is cryptographically hashed and stored on-chain, allowing instant verification of authenticity and protection from tampering or forgery.",
+        "Companies that issue contracts or purchase orders and want secure, verifiable, and transparent documentation.",
     },
     {
       icon: Coins,
-      title: "On-Chain Receivables Financing",
+      title: "Financial Institutions / Fintech Lenders",
       description:
-        "Vendors can tokenize invoices or approved contracts as collateral and receive early payment through decentralized liquidity providers or institutional investors.",
+        "Banks, lenders, or fintech platforms seeking verified, fundable invoices or contracts to provide financing.",
     }
   ]
 
   interface TeamMember {
   name: string;
   role: string;
-  image: string;
+  image: any;
   linkedin?: string;
   twitter?: string;
 }
@@ -63,10 +71,10 @@ export default function Hero() {
 const teamMembers: TeamMember[] = [
   {
     name: "Uzor Ifeanyi",
-    role: "Founder & CEO",
-    image: "https://i.pravatar.cc/150?img=10",
-    linkedin: "#",
-    twitter: "#",
+    role: "Founder & CTO",
+    image: cto,
+    linkedin: "https://linkedin.com/in/uzor-ifeanyi-a500a7105",
+    twitter: "https://x.com/lexikoder",
   },
   {
     name: "Jane Doe",
@@ -85,7 +93,7 @@ const teamMembers: TeamMember[] = [
           {/* Logo */}
           <div className="flex items-center space-x-2 cursor-pointer">
             <div className="w-6 h-6 bg-gradient-to-r from-pink-500 to-orange-400 rounded-lg"></div>
-            <h1 className="text-xl font-semibold text-white">Basesign</h1>
+            <h1 className="text-xl font-semibold text-white">Basesig</h1>
           </div>
 
           {/* Navigation Buttons */}
@@ -97,14 +105,14 @@ const teamMembers: TeamMember[] = [
               Use Cases
             </button>
             <Link
-           to =  "http://localhost:8080/login"
+           to =  "https://app.basesig.xyz/login"
               
               className="text-white hover:text-pink-500 transition-colors text-sm"
             >
               Login
             </Link>
             <Link
-            to = "http://localhost:8080/"
+            to = "https://app.basesig.xyz/"
               className="inline-block px-5 py-2.5 rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 text-white font-medium shadow-md transition-all hover:opacity-90 hover:shadow-lg hover:scale-[1.02]"
               // size="sm"
               target="_blank" // opens in new tab
@@ -141,26 +149,28 @@ const teamMembers: TeamMember[] = [
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
-              eSignatures
+              Protect your Business 
             </span>{" "}
-            made simple
+            contract agreements onchain
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12">
-            Sign, send, and manage your documents securely from anywhere.
-            Experience effortless collaboration and trusted verification.
+            Upload your contract to Basesig, get it signed on chain, and access payment early.
+Basesig turns signed agreements into instantly fundable assets.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-pink-500 to-orange-400 text-white hover:opacity-90"
+            <Link
+            to = "https://app.basesig.xyz/"
+              className="inline-block px-5 py-2.5 rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 text-white font-medium shadow-md transition-all hover:opacity-90 hover:shadow-lg hover:scale-[1.02]"
+              // size="sm"
+              target="_blank" // opens in new tab
+  rel="noopener noreferrer"
             >
               Get Started
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </Link>
             <Button
               variant="outline"
               size="lg"
@@ -190,11 +200,11 @@ const teamMembers: TeamMember[] = [
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Why businesses choose{" "}
               <span className="bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
-                Basesign
+                Basesig
               </span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Powering fast, secure, and legally compliant digital signatures for every industry.
+              Powering fast, secure, and legally compliant digital contract agreement for every industry on chain.
             </p>
           </div>
 
@@ -220,15 +230,23 @@ const teamMembers: TeamMember[] = [
 
        <section className="pt-32 pb-20 text-center bg-gradient-to-b from-[#0f0f0f] to-[#141414]">
               <div className="container mx-auto px-4">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                  <span className="bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
-                    Basesign
-                  </span>{" "}
-                  Use Case
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-400">
+                  <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Basesig{" "}
+              <span className="bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
+                Use cases
+              </span>
+            </h2>
+                  {/* <span className="bg-gradient-to-r from-pink-500 to-orange-400   bg-clip-text">
+                    Basesig
+                  </span >{" "}
+                  <span className="bg-gradient-to-r from-pink-500 to-orange-400   bg-clip-text">
+                    Use cases
+                  </span >{" "} */}
                 </h1>
                 <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                  How Basesign’s digital signature infrastructure powers secure, transparent,
-                  and compliant blockchain-based receivables financing with Hashfire.
+                  How Basesig’s digital signature infrastructure powers secure, transparent,
+                  and compliant blockchain-based receivables financing with Basesig.
                 </p>
               </div>
             </section>
@@ -236,23 +254,12 @@ const teamMembers: TeamMember[] = [
             {/* USE CASE DETAILS */}
             <section className="py-24 bg-[#141414]">
               <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                  <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                    Real-World Impact of{" "}
-                    <span className="bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
-                      Basesign
-                    </span>
-                  </h2>
-                  <p className="text-gray-400 max-w-2xl mx-auto">
-                    Basesign’s eSignature and document verification layer help Hashfire build
-                    trustless financial automation for businesses worldwide.
-                  </p>
-                </div>
+               
       
                 {/* USE CASE CARDS */}
                
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {baseSignUseCases.map((useCase, index) => (
+                  {BasesigUseCases.map((useCase, index) => (
                     <Card
                       key={index}
                       className="bg-[#1a1a1a] border border-gray-700 hover:border-pink-500/40 hover:shadow-lg transition-all duration-300"
@@ -278,23 +285,25 @@ const teamMembers: TeamMember[] = [
             {/* CTA SECTION */}
             <section className="py-24 bg-[#0f0f0f] text-center">
               <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-4">
-                  Want to build your next{" "}
-                  <span className="bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
-                    blockchain use case
-                  </span>{" "}
-                  with Basesign?
-                </h2>
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-400">
+               Want to build your next with {" "}
+              <span className="bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
+                with Basesig?
+              </span>
+            </h2>
+                
                 <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-                  Get started with secure eSignatures and document validation APIs designed for
-                  Web3 platforms, fintech apps, and digital businesses.
+                  Get started Powering fast, secure, and legally compliant digital contract agreement for every industry on chain.
                 </p>
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-pink-500 to-orange-400 text-white hover:opacity-90"
-                >
-                  Get Started <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <Link
+            to = "https://app.basesig.xyz/"
+              className="inline-block px-5 py-2.5 rounded-lg bg-gradient-to-r from-pink-500 to-orange-400 text-white font-medium shadow-md transition-all hover:opacity-90 hover:shadow-lg hover:scale-[1.02]"
+              // size="sm"
+              target="_blank" // opens in new tab
+  rel="noopener noreferrer"
+            >
+              Get Started
+            </Link>
               </div>
             </section>
 
@@ -308,11 +317,11 @@ const teamMembers: TeamMember[] = [
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Meet the{" "}
             <span className="bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
-              Basesign Team
+              Basesig Team
             </span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Passionate innovators building secure, seamless, and powerful digital signing solutions for the modern world.
+            Passionate innovators building contract agreements infrastructure onchain.
           </p>
         </div>
 
@@ -332,7 +341,7 @@ const teamMembers: TeamMember[] = [
                     className="w-24 h-24 rounded-full border-2 border-pink-500/50 object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
+                <h3 className="text-lg font-semibold text-gray-400 mb-1">{member.name}</h3>
                 <p className="text-sm text-gray-400 mb-4">{member.role}</p>
                 <div className="flex justify-center space-x-4">
                   {member.linkedin && (
@@ -366,7 +375,7 @@ const teamMembers: TeamMember[] = [
       {/* FOOTER */}
       <footer className="py-10 border-t border-gray-800 bg-[#0f0f0f] text-gray-400">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© 2025 Basesign. All rights reserved.</p>
+          <p>© 2025 Basesig. All rights reserved.</p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="hover:text-pink-500 transition-colors">
               Privacy Policy

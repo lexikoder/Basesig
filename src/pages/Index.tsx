@@ -55,7 +55,7 @@ export default function Signup() {
           <div className="flex justify-center">
           <div className="flex items-center space-x-2 mb-6">
             <div className="w-6 h-6 bg-gradient-to-r from-pink-500 to-orange-500 rounded-lg"></div>
-            <h1 className="text-xl font-semibold">Basesign</h1>
+            <h1 className="text-xl font-semibold">Basesig</h1>
           </div>
           </div>
 
